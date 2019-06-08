@@ -5,13 +5,13 @@ def sum_consenutives(a):
 
 if __name__ == '__main__':
     print("Example:")
-    print(sum_consenutives([1, 1, 1, 1]))
+    print(list(sum_consenutives([1, 1, 1, 1])))
 
     # These "asserts" are used for self-checking and not for an auto-testing
-    assert sum_consenutives([1, 1, 1, 1]) == [4]
-    assert sum_consenutives([1, 1, 2, 2]) == [2, 4]
-    assert sum_consenutives([1, 1, 2, 1]) == [2, 2, 1]
-    assert sum_consenutives([3, 3, 3, 4, 4, 5, 6, 6]) == [9, 8, 5, 12]
-    assert sum_consenutives([1]) == [1]
-    assert sum_consenutives([]) == []
+    assert list(sum_consenutives([1, 1, 1, 1])) == [4]
+    assert list(sum_consenutives([1, 1, 2, 2])) == [2, 4]
+    assert list(sum_consenutives([1, 1, 2, 1])) == [2, 2, 1]
+    assert list(sum_consenutives([3, 3, 3, 4, 4, 5, 6, 6])) == [9, 8, 5, 12]
+    assert list(sum_consenutives([1])) == [1]
+    assert list(sum_consenutives([])) == []
     print("Coding complete? Click 'Check' to earn cool rewards!")
