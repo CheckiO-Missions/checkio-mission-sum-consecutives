@@ -1,20 +1,16 @@
 <!-- Describe task in general -->
 
 <p>
-    Sum two passed ints
-</p>
-
-<p style="text-align: center;">
-    <img  title="example" src="{{MEDIA}}example.png" alt="example" style="max-height: 83px"/>
+    You are given {% if interpreter.slug == "js-node" %}an array{% else %}a list{% endif %} which contains only integers (positive and negative). Your job is to sum only the numbers that are the same and consecutive. The result should be one list.
 </p>
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Input: </strong> Two arguments. Both are ints.
+    <strong>Input: </strong> {% if interpreter.slug == "js-node" %}an array{% else %}a list{% endif %}.
 </p>
 
 <p>
-    <strong>Output: </strong> Int. 
+    <strong>Output: </strong> {% if interpreter.slug == "js-node" %}an array{% else %}a list{% endif %}. 
 </p>
 
 
@@ -25,28 +21,13 @@
     </p>
 
 {% if interpreter.slug == "js-node" %}
-<pre class="brush: javascript">sumTwo(2, 3) == 5
-sumTwo(5, 7) == 12
+<pre class="brush: javascript">sumConsenutives([1, 1, 1, 1]) == [4]
+sumConsenutives([1, 1, 2, 2]) == [2, 4]
 </pre>
 {% else %}
-<pre class="brush: python">sum_two(2, 3) == 5
-sum_two(5, 7) == 12
+<pre class="brush: python">sum_consenutives([1, 1, 1, 1]) == [4]
+sum_consenutives([1, 1, 2, 2]) == [2, 4]
 </pre>
 {% endif %}
 </div>
 
-
-<!-- Here you can explain how it can be used in development -->
-<!-- The section is optional -->
-<p class="for_info_only">
-
-    <strong>How it’s used: </strong>
-    <i>(math is used everywhere)</i>
-</p>
-
-<!-- Here you can explain some constraints for input-->
-<!-- The section is optional -->
-<p>
-    <strong>Precondition:</strong>
-    <i>both given ints should be between -1000 and 1000</i>
-</p>

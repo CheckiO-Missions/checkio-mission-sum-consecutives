@@ -1,16 +1,17 @@
-def sum_two(a, b):
-    """
-        sums two passed arguments
-    """
+def sum_consenutives(a):
     # your code here
     return None
 
 
 if __name__ == '__main__':
     print("Example:")
-    print(sum_two(3, 2))
-    
+    print(sum_consenutives([1, 1, 1, 1]))
+
     # These "asserts" are used for self-checking and not for an auto-testing
-    assert sum_two(3, 2) == 5, "First"
-    assert sum_two(5, 7) == 12, "Second"
+    assert sum_consenutives([1, 1, 1, 1]) == [4]
+    assert sum_consenutives([1, 1, 2, 2]) == [2, 4]
+    assert sum_consenutives([1, 1, 2, 1]) == [2, 2, 1]
+    assert sum_consenutives([3, 3, 3, 4, 4, 5, 6, 6]) == [9, 8, 5, 12]
+    assert sum_consenutives([1]) == [1]
+    assert sum_consenutives([]) == []
     print("Coding complete? Click 'Check' to earn cool rewards!")
