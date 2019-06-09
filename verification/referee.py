@@ -45,8 +45,8 @@ api.add_listener(
     CheckiOReferee(
         tests=TESTS,
         function_name={
-            "python": "sum_consenutives",
-            "js": "sumConsenutives"
+            "python": "sum_consecutives",
+            "js": "sumConsecutives"
         },
         cover_code={
             'python-3': py_cover,

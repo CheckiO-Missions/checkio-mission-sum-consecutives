@@ -10,7 +10,7 @@
 </p>
 
 <p>
-    <strong>Output: </strong> {% if interpreter.slug == "js-node" %}an array{% else %}a list{% endif %}. 
+    <strong>Output: </strong> {% if interpreter.slug == "js-node" %}an array{% else %}an iterable{% endif %}. 
 </p>
 
 
@@ -21,12 +21,12 @@
     </p>
 
 {% if interpreter.slug == "js-node" %}
-<pre class="brush: javascript">sumConsenutives([1, 1, 1, 1]) == [4]
-sumConsenutives([1, 1, 2, 2]) == [2, 4]
+<pre class="brush: javascript">sumConsecutives([1, 1, 1, 1]) == [4]
+sumConsecutives([1, 1, 2, 2]) == [2, 4]
 </pre>
 {% else %}
-<pre class="brush: python">sum_consenutives([1, 1, 1, 1]) == [4]
-sum_consenutives([1, 1, 2, 2]) == [2, 4]
+<pre class="brush: python">sum_consecutives([1, 1, 1, 1]) == [4]
+sum_consecutives([1, 1, 2, 2]) == [2, 4]
 </pre>
 {% endif %}
 </div>

@@ -1,6 +1,6 @@
 "use strict";
 
-function sumConsenutives(a) {
+function sumConsecutives(a) {
     // your code here
     return undefined;
 }
@@ -9,15 +9,15 @@ var assert = require('assert');
 
 if (!global.is_checking) {
     console.log('Example:');
-    console.log(sumConsenutives([1, 1, 1, 1]));
+    console.log(sumConsecutives([1, 1, 1, 1]));
 
     // These "asserts" are used for self-checking
-    assert.deepEqual(sumConsenutives([1, 1, 1, 1]), [4]);
-    assert.deepEqual(sumConsenutives([1, 1, 2, 2]), [2, 4]);
-    assert.deepEqual(sumConsenutives([1, 1, 2, 1]), [2, 2, 1]);
-    assert.deepEqual(sumConsenutives([3, 3, 3, 4, 4, 5, 6, 6]), [9, 8, 5, 12]);
-    assert.deepEqual(sumConsenutives([1]), [1]);
-    assert.deepEqual(sumConsenutives([]), []);
+    assert.deepEqual(sumConsecutives([1, 1, 1, 1]), [4]);
+    assert.deepEqual(sumConsecutives([1, 1, 2, 2]), [2, 4]);
+    assert.deepEqual(sumConsecutives([1, 1, 2, 1]), [2, 2, 1]);
+    assert.deepEqual(sumConsecutives([3, 3, 3, 4, 4, 5, 6, 6]), [9, 8, 5, 12]);
+    assert.deepEqual(sumConsecutives([1]), [1]);
+    assert.deepEqual(sumConsecutives([]), []);
 
     console.log("Coding complete? Click 'Check' to earn cool rewards!");
 }}

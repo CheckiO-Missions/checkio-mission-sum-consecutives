@@ -8,8 +8,8 @@ requirejs(['ext_editor_io', 'jquery_190'],
         var io = new extIO({
             multipleArguments: true,
             functions: {
-                python: 'sum_consenutives',
-                js: 'sumConsenutives'
+                python: 'sum_consecutives',
+                js: 'sumConsecutives'
             }
         });
         io.start();
