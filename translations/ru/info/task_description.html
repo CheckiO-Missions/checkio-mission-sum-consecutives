@@ -1,0 +1,32 @@
+<!-- Describe task in general -->
+
+<p>
+   Вам дан{% if interpreter.slug == "js-node" %}an array{% else %}список{% endif %}, который содержит исключительно целые числа (как положительные, так и отрицательные). Ваша задача - суммировать только одинаковые и последовательные числа. 
+</p>
+
+<!-- Explain input and output values -->
+<p>
+    <strong>Входные данные: </strong> {% if interpreter.slug == "js-node" %}an array{% else %}Список{% endif %}.
+</p>
+
+<p>
+    <strong>Выходные данные: </strong> {% if interpreter.slug == "js-node" %}an array{% else %}Целое число{% endif %}. 
+</p>
+
+
+<!-- Give some usage examples -->
+<div class="for_info_only">
+    <p>
+        <strong>Пример:</strong>
+    </p>
+
+{% if interpreter.slug == "js-node" %}
+<pre class="brush: javascript">sumConsecutives([1, 1, 1, 1]) == [4]
+sumConsecutives([1, 1, 2, 2]) == [2, 4]
+</pre>
+{% else %}
+<pre class="brush: python">sum_consecutives([1, 1, 1, 1]) == [4]
+sum_consecutives([1, 1, 2, 2]) == [2, 4]
+</pre>
+{% endif %}
+</div>
