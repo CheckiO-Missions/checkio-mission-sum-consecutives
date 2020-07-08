@@ -1,7 +1,7 @@
 <!-- Describe task in general -->
 
 <p>
-   Вам дан{% if interpreter.slug == "js-node" %}an array{% else %}список{% endif %}, который содержит исключительно целые числа (как положительные, так и отрицательные). Ваша задача - суммировать только одинаковые и последовательные числа. 
+   Дан {% if interpreter.slug == "js-node" %}an array{% else %}список{% endif %}, который содержит исключительно целые числа (как положительные, так и отрицательные). Ваша задача — суммировать только одинаковые следующие одно за другим числа. 
 </p>
 
 <!-- Explain input and output values -->
@@ -10,7 +10,7 @@
 </p>
 
 <p>
-    <strong>Выходные данные: </strong> {% if interpreter.slug == "js-node" %}an array{% else %}Целое число{% endif %}. 
+    <strong>Выходные данные: </strong> {% if interpreter.slug == "js-node" %}an array{% else %}Итерируемое{% endif %}. 
 </p>
 
 
